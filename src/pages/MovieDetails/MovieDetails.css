@@ -1,0 +1,119 @@
+.movie-details {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+.movie-header {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.movie-poster {
+    width: 200px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.movie-info {
+    flex: 1;
+}
+
+.movie-info h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.movie-info p {
+    margin: 5px 0;
+}
+
+.genres {
+    margin: 10px 0;
+}
+
+.genre {
+    display: inline-block;
+    background-color: #eee;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+.movie-trailer, .movie-cast, .movie-reviews {
+    margin-bottom: 20px;
+}
+
+.movie-trailer iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border-radius: 10px;
+}
+
+.cast-images {
+    display: flex;
+    gap: 10px;
+}
+
+.cast-member {
+    text-align: center;
+}
+
+.cast-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+.movie-reviews h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group textarea, .form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.reviews-list {
+    margin-top: 20px;
+}
+
+.review {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}

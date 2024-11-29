@@ -1,0 +1,24 @@
+/* src/pages/Watchlist.css */
+
+.watchlist {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    background-color: #fafafa; /* Brown background color */
+    color: #fff; /* White text color for better contrast */
+}
+
+.watchlist-title {
+    font-size: 2.5em;
+    color: #000000; /* Red color for the header */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.movie-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
