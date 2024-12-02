@@ -24,7 +24,7 @@ const Navbar = ({ setSearchQuery }) => {
             />
             <div className="navbar-actions">
                 <Link to="/login" className="navbar-icon">User</Link>
-                <span className="navbar-icon">zeby kbeeeer</span>
+                <span className="navbar-icon">toaaa</span>
             </div>
         </nav>
     );
