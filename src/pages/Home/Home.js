@@ -31,7 +31,7 @@ const Home = () => {
                 const moviesWithPosters = uniqueMovies.filter(movie => movie.poster_path);
 
                 setMovies(moviesWithPosters.slice(0, 6)); // Slice the array to include only the top 4 movies
-                setFeaturedMovies(moviesWithPosters.slice(6, 20)); // Slice the array to include the next 10 movies as featured
+                setFeaturedMovies(moviesWithPosters.slice(6, 18)); // Slice the array to include the next 10 movies as featured
             } catch (error) {
                 console.error('Error fetching movies:', error);
             }
