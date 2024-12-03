@@ -3,7 +3,7 @@ import MovieCard from '../../component/MovieCard/MovieCard';
 import './Home.css';
 
 const API_KEY = '11c7aba54522527e7f5806af9ca802a7'; // Your TMDb API key
-const DIRECTOR_IDS = ['1210055', '1234567']; // Replace with actual director IDs
+const DIRECTOR_IDS = ['1210055', '1234567','127767']; // Replace with actual director IDs
 
 const Home = () => {
     const [movies, setMovies] = useState([]);
@@ -27,8 +27,11 @@ const Home = () => {
                 const uniqueMovies = Array.from(new Set(combinedMovies.map((movie) => movie.id)))
                     .map((id) => combinedMovies.find((movie) => movie.id === id));
 
-                setMovies(uniqueMovies.slice(0, 6)); // Slice the array to include only the top 5 movies
-                setFeaturedMovies(uniqueMovies.slice(6, 19)); // Slice the array to include the next 5 movies as featured
+                // Filter out movies without posters
+                const moviesWithPosters = uniqueMovies.filter(movie => movie.poster_path);
+
+                setMovies(moviesWithPosters.slice(0, 6)); // Slice the array to include only the top 4 movies
+                setFeaturedMovies(moviesWithPosters.slice(6, 20)); // Slice the array to include the next 10 movies as featured
             } catch (error) {
                 console.error('Error fetching movies:', error);
             }
