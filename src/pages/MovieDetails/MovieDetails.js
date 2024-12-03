@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom'; // Import Link here
 import { useReviews } from '/Users/ahmedhisham/Desktop/NileFlix/src/pages/Context/ReviewsContext.js';
 import './MovieDetails.css';
 
@@ -90,8 +90,10 @@ const MovieDetails = () => {
                 <div className="cast-images">
                     {movie.credits.cast.slice(0, 5).map((cast) => (
                         <div key={cast.id} className="cast-member">
-                            <img src={`https://image.tmdb.org/t/p/w200${cast.profile_path}`} alt={cast.name} className="cast-image" />
-                            <p>{cast.name}</p>
+                            <Link to={`/actor-details/${cast.id}`}>
+                                <img src={`https://image.tmdb.org/t/p/w200${cast.profile_path}`} alt={cast.name} className="cast-image" />
+                                <p>{cast.name}</p>
+                            </Link>
                         </div>
                     ))}
                 </div>

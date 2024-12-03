@@ -1,0 +1,75 @@
+/* src/pages/ActorDetails.css */
+
+.actor-details {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+.actor-header {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.actor-photo {
+    width: 200px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.actor-info {
+    flex: 1;
+}
+
+.actor-info h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.actor-info p {
+    margin: 5px 0;
+}
+
+.actor-credits {
+    margin-top: 20px;
+}
+
+.actor-credits h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.credits-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.credit-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+}
+
+.credit-poster {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.credit-info {
+    text-align: center;
+}
+
+.credit-info h3 {
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+.credit-info p {
+    font-size: 0.9em;
+    margin: 2px 0;
+}
