@@ -3,7 +3,7 @@ import MovieList from '/Users/ahmedhisham/Desktop/NileFlix/src/component/Navbar/
 import './Movies.css';
 
 const API_KEY = '11c7aba54522527e7f5806af9ca802a7'; // Your TMDb API key
-const DIRECTOR_IDS = ['1115944', '1186523','2002988','226425']; // Replace with actual director IDs
+const DIRECTOR_IDS = ['1115944', '1186523', '2002988', '226425']; // Replace with actual director IDs
 
 const Movies = ({ searchQuery }) => {
     const [movies, setMovies] = useState([]);
@@ -26,7 +26,10 @@ const Movies = ({ searchQuery }) => {
                 const uniqueMovies = Array.from(new Set(combinedMovies.map((movie) => movie.id)))
                     .map((id) => combinedMovies.find((movie) => movie.id === id));
 
-                setMovies(uniqueMovies); // Set the combined and unique movies to the state
+                // Filter out movies without posters
+                const moviesWithPosters = uniqueMovies.filter(movie => movie.poster_path);
+
+                setMovies(moviesWithPosters); // Set the filtered movies to the state
             } catch (error) {
                 console.error('Error fetching movies:', error);
             }
