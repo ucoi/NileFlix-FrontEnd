@@ -10,7 +10,7 @@ html, body {
     min-height: 100vh; /* Ensure the home container takes up the full height of the viewport */
     padding: 20px;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0; /* Change background color */
+    background-color: #ffffff; /* Change background color */
     color: #000; /* Change text color */
 }
 
@@ -26,7 +26,7 @@ html, body {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-    flex-grow: 0.5; /* Ensure the movie grid takes up the remaining space */
+    flex-grow: 0.3; /* Ensure the movie grid takes up the remaining space */
 }
 
 /* Media Queries */

@@ -26,7 +26,7 @@ const Home = () => {
                 const uniqueMovies = Array.from(new Set(combinedMovies.map((movie) => movie.id)))
                     .map((id) => combinedMovies.find((movie) => movie.id === id));
 
-                setMovies(uniqueMovies.slice(0, 5)); // Slice the array to include only the top 5 movies
+                setMovies(uniqueMovies.slice(0, 6)); // Slice the array to include only the top 5 movies
             } catch (error) {
                 console.error('Error fetching movies:', error);
             }
