@@ -10,6 +10,8 @@ import Login from './pages/Login/Login';
 import ActorDetails from './pages/ActorDetails/ActorDetails';
 import { WatchlistProvider } from './pages/Context/WatchListContext';
 import { ReviewsProvider } from './pages/Context/ReviewsContext';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const App = () => {
     const [searchQuery, setSearchQuery] = useState('');
