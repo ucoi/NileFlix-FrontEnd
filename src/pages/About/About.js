@@ -18,12 +18,12 @@ const About = () => {
                     <div className="team-member">
                         <img src="path/to/ahmed-hisham.jpg" alt="Ahmed Hisham" />
                         <h4>Ahmed Hisham</h4>
-                        <p>Tester and Front-End Develeoper</p>
+                        <p>Front-End Develeoper</p>
                     </div>
                     <div className="team-member">
                         <img src="path/to/salah-sultan.jpg" alt="Salah Sultan" />
                         <h4>Salah Sultan</h4>
-                        <p>Tester and Front-End Develeoper</p>
+                        <p>Unit Tester </p>
                     </div>
                     <div className="team-member">
                         <img src="path/to/ahmed-rabeh.jpg" alt="Ahmed Rabeh" />
