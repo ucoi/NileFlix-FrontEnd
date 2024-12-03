@@ -1,4 +1,3 @@
-/* src/pages/Login.css */
 
 body {
     background-color: #f0f2f5;
@@ -9,7 +8,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 70vh;
     background-color: #f0f2f5;
 }
 
