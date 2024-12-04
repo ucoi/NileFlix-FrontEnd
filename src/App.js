@@ -22,7 +22,7 @@ const App = () => {
                 <Router>
                     <Navbar setSearchQuery={setSearchQuery} />
                     <Routes>
-                        <Route path="/" element={<Home />} />
+                        <Route path="/" element={<Home searchQuery={searchQuery} />} />
                         <Route path="/movies" element={<Movies searchQuery={searchQuery} />} />
                         <Route path="/about" element={<About />} />
                         <Route path="/movie-details/:id" element={<MovieDetails />} />

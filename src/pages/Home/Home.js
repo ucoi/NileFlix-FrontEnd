@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import MovieCard from '../../component/MovieCard/MovieCard';
 import './Home.css';
 
-const API_KEY = '11c7aba54522527e7f5806af9ca802a7'; // Your TMDb API key
-const DIRECTOR_IDS = ['1210055', '1234567','127767']; // Replace with actual director IDs
+const API_KEY = '11c7aba54522527e7f5806af9ca802a7'; 
+const DIRECTOR_IDS = ['1210055', '1234567', '127767']; 
 
-const Home = () => {
+const Home = ({ searchQuery }) => {
     const [movies, setMovies] = useState([]);
     const [featuredMovies, setFeaturedMovies] = useState([]);
 
@@ -30,8 +30,8 @@ const Home = () => {
                 // Filter out movies without posters
                 const moviesWithPosters = uniqueMovies.filter(movie => movie.poster_path);
 
-                setMovies(moviesWithPosters.slice(0, 6)); // Slice the array to include only the top 4 movies
-                setFeaturedMovies(moviesWithPosters.slice(6, 18)); // Slice the array to include the next 10 movies as featured
+                setMovies(moviesWithPosters.slice(0, 6)); 
+                setFeaturedMovies(moviesWithPosters.slice(6, 18)); 
             } catch (error) {
                 console.error('Error fetching movies:', error);
             }
@@ -40,11 +40,19 @@ const Home = () => {
         fetchMovies();
     }, []);
 
+    const filteredMovies = movies.filter(movie =>
+        movie.title.toLowerCase().includes(searchQuery.toLowerCase())
+    );
+
+    const filteredFeaturedMovies = featuredMovies.filter(movie =>
+        movie.title.toLowerCase().includes(searchQuery.toLowerCase())
+    );
+
     return (
         <div className="home">
             <h2 className="top-title">Top on NileFlix this week</h2>
             <div className="movie-grid">
-                {movies.map((movie) => (
+                {filteredMovies.map((movie) => (
                     <MovieCard 
                         key={movie.id} 
                         id={movie.id} 
@@ -56,7 +64,7 @@ const Home = () => {
             </div>
             <h2 className="featured-title">Featured Movies</h2>
             <div className="movie-grid">
-                {featuredMovies.map((movie) => (
+                {filteredFeaturedMovies.map((movie) => (
                     <MovieCard 
                         key={movie.id} 
                         id={movie.id} 
