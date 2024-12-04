@@ -7,7 +7,7 @@ html, body {
 .movie-details {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ensure the container takes up the full height of the viewport */
+    min-height: 100vh; 
     padding: 20px;
     font-family: Arial, sans-serif;
     background-color: #ffffff; /* Light background color */
