@@ -1,7 +1,7 @@
 // src/component/MovieList.js
 import React from 'react';
-import MovieCard from '/Users/ahmedhisham/Desktop/NileFlix/src/component/MovieCard/MovieCard.js';
 import './MovieList.css';
+import MovieCard from '../MovieCard/MovieCard';
 
 const MovieList = ({ movies, searchQuery }) => {
     const filteredMovies = movies.filter(movie =>

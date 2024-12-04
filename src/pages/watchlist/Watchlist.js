@@ -1,6 +1,6 @@
 // src/pages/Watchlist.js
 import React from 'react';
-import { useWatchlist } from '/Users/ahmedhisham/Desktop/NileFlix/src/pages/Context/WatchListContext.js';
+import { useWatchlist } from '../Context/WatchListContext';
 import MovieCard from '../../component/MovieCard/MovieCard';
 import './Watchlist.css';
 

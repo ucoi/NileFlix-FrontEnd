@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { useParams, Link } from 'react-router-dom'; // Import Link here
-import { useReviews } from '/Users/ahmedhisham/Desktop/NileFlix/src/pages/Context/ReviewsContext.js';
+import { useParams, Link } from 'react-router-dom'; 
+import { useReviews } from '../Context/ReviewsContext'; 
 import './MovieDetails.css';
 
 const API_KEY = '11c7aba54522527e7f5806af9ca802a7'; 

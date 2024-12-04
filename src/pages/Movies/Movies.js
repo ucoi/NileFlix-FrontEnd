@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import MovieList from '/Users/ahmedhisham/Desktop/NileFlix/src/component/Navbar/MovieList.js';
+import MovieList from '../../component/Navbar/MovieList';
 import './Movies.css';
 
 const API_KEY = '11c7aba54522527e7f5806af9ca802a7'; // Your TMDb API key
