@@ -9,7 +9,7 @@ const About = () => {
             
             <section className="mission">
                 <h3>Our Mission</h3>
-                <p>Our mission is to provide a seamless and enjoyable streaming experience for our users. We strive to offer a diverse selection of content that caters to all tastes and preferences.</p>
+                <p>Our mission is to provide a seamless and enjoyable streaming experience for our users We strive to offer a diverse selection of content that caters to all tastes and preferences.</p>
             </section>
             
             <section className="team">
