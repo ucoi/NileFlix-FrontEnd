@@ -17,7 +17,7 @@ const About = () => {
                 <div className="team-members">
                     <div className="team-member">
                         <img src="path/to/ahmed-hisham.jpg" alt="Ahmed Hisham" />
-                        <h4>Ahmed Hisham</h4>
+                        <h4>AhmedHisham</h4>
                         <p>Front-End Develeoper</p>
                     </div>
                     <div className="team-member">
